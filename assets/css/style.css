@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* { 
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(206,227,226);
+}
+
+/* nav start */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.nav-logo-brand {
+    height: 40px;
+    width: 150px;
+    margin: 0 0 0 100px;
+    align-items: center;
+    background-image: url(../images/hatid-sundo-logo-png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+.nav-btns {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 12px 0 0;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+.login-signup-logout-btns {
+    display: flex;
+    flex-direction: row;
+}
+.signup-holder {
+    padding: 0 8px 0 0;
+}
+.sign-up-btn {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px;
+    border: none;
+    background-color: rgb(74,184,239);
+    border-radius: 12px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.login-holder {
+    padding: 0 8px 0 0;
+}
+.log-in-btn {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.log-out-btn {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* nav end */
+
+/* login signup modal start */
+.modal {
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    z-index: 3;
+}
+.login-signup-admin-modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+}
+.signup-title {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+.form-element {
+    margin: 15px 0px;
+}
+.form-element label {
+    font-size: 14px;
+    color: #222;
+}
+.signup-login-input {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+.submit {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* login signup modal end */
+#loggedInArea {
+    display: none;
+}
+/* hero section start */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(206,227,226);
+    padding: 100px 0 0 0;
+    height: 600px;    
+}
+.hero-text-download {
+    display: flex;
+    flex-direction: column;
+}
+.hero-section-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 40px 0 150px;
+    width: 500px;
+    height: 400px;
+}
+.hero-section-text-card {
+    display: flex;
+    flex-direction: row;
+}
+.hero-sec-icons {
+    font-size: 60px;
+}
+.hero-section-text {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+}
+.hero-text-main {
+    font-size: 30px;
+    font-weight: 700;
+}
+.hero-text-support {
+    font-size: 14px;
+}
+.hero-section-download-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 40px 0;
+}
+.google-play {
+    cursor: pointer;
+    background-image: url(../images/android.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 200px;
+}
+.app-store {
+    cursor: pointer;
+    background-image: url(../images/apple.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 200px;
+}
+.hero-pic-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-section-pic {
+    height: 700px;
+    width: 730px;
+    background-image: url(../images/hero-section.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.book-now-btn-holder {
+    padding: 0 0 120px 0;
+    /* margin-right: 100px; */
+}
+.book-now-btn-hero-section {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    height: 100px;
+    width: 180px;
+    border: none;
+    background-color: rgb(74,184,239);
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.book-now-btn-hero-section:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+    background-color: white;
+    border: 2px solid rgb(74,184,239);
+    color: rgb(74,184,239);
+}
+/* hero section end */
+
+/* booking start */
+.booking-container {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    width: 1050px;
+    height: 600px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border: 3px solid #222;
+    border-radius: 10px; 
+    padding: 15px 15px 0 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.show-booking-container {
+    visibility: visible;
+    z-index: 3;
+}
+.booking-close-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    float: right;
+    font-size: 22px;
+}
+.main-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.selector-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 60px;
+    justify-content: space-evenly;
+}
+.name-input {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+.vehicle-options-holder {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.choose-vehicle {
+    font-size: 14px;
+    color: #222;
+}
+.vehicle-options {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+.from-group {
+    display: flex;
+    padding: 20px 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.booking-pickup-icon {
+    font-size: 20px;
+}
+.from-input {
+    margin-top: 5px;
+    display: block;
+    width: 85%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+.to-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 15px 0;
+}
+.booking-destination-icon {
+    font-size: 20px;
+}
+.to-input {
+    margin-top: 5px;
+    display: block;
+    width: 85%;
+    padding: 5px;   
+    outline: none;
+    border: 1px solid #aaa;
+}
+.calc-btn-holder {
+    text-align: center;
+}
+.calculate-btn {
+    width: 45%;
+    height: 34px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.booking-output {
+    font-size: 14px;
+    padding: 20px 0 5px 0;
+}
+.book-btn {
+    visibility: hidden;
+    width: 100%;
+    height: 34px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.adminApplicationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 90vh;
+    width: 90%;
+    border: 2px solid black;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+.applicant-table{
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+
+.fare-display {
+    padding: 0 0 10px 0;
+}
+.show-book-btn {
+    visibility: visible;
+}
+.map-card {
+    padding: 30px 0 0 0;
+}
+.google-map {
+    width: 620px;
+    height: 520px;
+}
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 15px 20px 30px 20px;
+    color: #333;
+    visibility: hidden;
+}
+.open-popup {
+    visibility: visible;
+}
+.popup button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    float: right;
+}
+.popup-texts {
+    display: flex;
+    flex-direction: column;
+}
+.popup-heading {
+    font-size: 34px;
+    font-weight: 900;
+    margin: 30px 0 10px; 
+}
+.popup-subtext {
+    font-size: 20px;
+    font-weight: 550;
+    margin: 30px 0 10px; 
+}
+/* booking end */
+
+/* services start */
+.services-section {
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
+    width: 100%;
+}
+.services-container{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../images/services-background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+
+.video-section{
+    width: 900px;
+    height: 100vh;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-right: -200px;
+}
+
+#videoBG{ 
+    object-fit: cover;
+    height: 680px;
+    width: 680px;
+    left: 0;
+    right: 0;
+    z-index: -10; 
+}
+.car-section{
+    width: 95vmin;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 200%;
+    left: 30%;
+    overflow: hidden;
+}
+.car-pic{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;    
+    z-index: -10;
+}
+.text-content{
+    font-weight: 500;
+    margin-left: 30px;
+    font-size: 24px;
+    position: absolute;
+    top: 230%;
+    left: 5%;
+    z-index: 1;
+}
+.book-now-btn{
+    height: 100px;
+    width: 180px;
+    border: none;
+    background-color: rgb(74,184,239);
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 125%;
+    left: 30%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.book-now-btn:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+    background-color: white;
+    border: 2px solid rgb(74,184,239);
+    color: rgb(74,184,239);
+}
+/* services end */
+
+/* career start */
+.bodyBG{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/cbackgound.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.careerContainer{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+
+.drivers{
+    width: 600px;
+    height: auto;
+}
+
+.dMotor{
+    background-image: url(../images/motor1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 400px;
+    margin-top: 100px;
+}
+.dCar{
+    background-image: url(../images/car.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 400px;
+}
+
+.admins{
+    width: 600px;
+    height: auto;
+}
+
+.adminForm{
+width: 80%;
+height: 400px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.adminPic{
+width: 80%;
+height: 400px;
+margin: 0 auto;
+background-image: url(../images/admin1.png);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+label{
+    font-size: 20px;
+   
+}
+
+.full-name{
+    height: 35px;
+    width: 250px;
+    
+}
+.contact-number{
+    height: 35px;
+    width: 250px;
+
+}
+.apply-btn{
+    cursor: pointer;
+    height: 70px;
+    width: 160px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(74,184,239);
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.apply-btn:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+h4{
+    
+    font-size: 40px;
+}
+
+.riderTxt{
+    padding: 30px 0 80px 30px;
+    font-weight: 600;
+    width: 450px;
+}
+.driverTxt{
+    margin: -70px 0 0 0;
+    padding: 0 0 0 30px;
+    font-weight: 600;
+    width: 450px;
+}
+.adminTxt{
+    padding: 0 0 0 100px;
+    font-weight: 600;
+    width: 450px;
+}
+/* career end */
+
+.lineFoot2{
+    height: 20px;
+    width: 100%;
+    background-color: white;
+}
+.lineFoot1{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(74,184,239);
+}
+
+/* footer start */
+.footerContainer{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-image: url(../images/footer.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+}
+.footerLogo {
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    background-image: url(../images/hatid-sundo-logo-png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+}
+.footerCards{
+    height: 390px;
+    width: 250px;
+}
+
+.firstFooterContent1{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstFooterContent2{
+    height: 230px;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    margin-left: 20px;
+}
+
+.footerHead{
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUsText{
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 10px;
+}
+.contactUsdetail{
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.tollFreeNumber{
+    font-weight: 600;
+}
+.landlineNum{
+    font-weight: 600;
+}
+.mobileNum{
+    font-weight: 600;
+}
+.book-now-btn-footer {
+    text-align: center;
+    height: 100px;
+    width: 180px;
+    border: none;
+    background-color: rgb(74,184,239);
+    border-radius: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.book-now-btn-footer:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+    background-color: white;
+    border: 2px solid rgb(74,184,239);
+    color: rgb(74,184,239);
+}
+
+.copyRight{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(206,227,226);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+}
+/* footer end */
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    12.5% {
+        transform: translateX(0);
+    }
+    14.29% {
+        transform: translateX(-100%);
+    }
+    26.79% {
+        transform: translateX(-100%);
+    }
+    28.57% {
+        transform: translateX(-200%);
+    }
+    41.07% {
+        transform: translateX(-200%);
+    }
+    42.86% {
+        transform: translateX(-300%);
+    }
+    55.36% {
+        transform: translateX(-300%);
+    }
+    57.14% {
+        transform: translateX(-400%);
+    }
+    69.64% {
+        transform: translateX(-400%);
+    }
+    71.43% {
+        transform: translateX(-500%);
+    }
+    83.93% {
+        transform: translateX(-500%);
+    }
+    85.71% {
+        transform: translateX(-600%);
+    }
+    98.21% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(-700%);
+    }
+}
+  .fortuner{
+    /* height: 600px; */
+    width: 100%;
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .videoSection {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .carSection {
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .carPic {
+        animation-duration: 12s; /* Adjust the duration for smaller screens */
+    }
+}
+
+ @media(max-width: 2501px){
+    #videoBG{
+        height: 880px;
+        width: 880px;
+    }
+    .videoSection{
+        margin-right: -1250px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 2333px){
+    #videoBG{
+        height: 880px;
+        width: 880px;
+    }
+    .videoSection{
+        margin-right: -1150px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 2088px){
+    #videoBG{
+        height: 780px;
+        width: 780px;
+    }
+    .videoSection{
+        margin-right: -900px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1853px){
+    #videoBG{
+        height: 680px;
+        width: 680px;
+    }
+    .videoSection{
+        margin-right: -890px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1624px){
+    #videoBG{
+        height: 580px;
+        width: 580px;
+    }
+    .videoSection{
+        margin-right: -800px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1395px){
+    #videoBG{
+        height: 480px;
+        width: 480px;
+    }
+    .videoSection{
+        margin-right: -710px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1355px){
+    #videoBG{
+        height: 480px;
+        width: 480px;
+    }
+    .videoSection{
+        margin-right: -700px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1286px){
+    #videoBG{
+        height: 480px;
+        width: 480px;
+    }
+    .videoSection{
+        margin-right: -670px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1171px){
+    #videoBG{
+        height: 400px;
+        width: 400px;
+    }
+    .videoSection{
+        margin-right: -590px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 1000px){
+    #videoBG{
+        height: 360px;
+        width: 360px;
+    }
+    .videoSection{
+        margin-right: -500px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 848px){
+    #videoBG{
+        height: 300px;
+        width: 300px;
+    }
+    .videoSection{
+        margin-right: -420px;
+        height: auto;
+        width: auto;
+    }
+    .bookNowBtn{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+ }
+ @media(max-width: 749px){
+    #videoBG{
+        height: 255px;
+        width: 255px;
+    }
+    .videoSection{
+        margin-right: -380px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 602px){
+    #videoBG{
+        height: 220px;
+        width: 220px;
+    }
+    .videoSection{
+        margin-right: -300px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 522px){
+    #videoBG{
+        height: 200px;
+        width: 200px;
+    }
+    .videoSection{
+        margin-right: -250px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 482px){
+    #videoBG{
+        height: 165px;
+        width: 165px;
+    }
+    .videoSection{
+        margin-right: -240px;
+        height: auto;
+        width: auto;
+    }
+ }
+ @media(max-width: 400px){
+    #videoBG{
+        height: 140px;
+        width: 140px;
+    }
+    .videoSection{
+        margin-right: -200px;
+        height: auto;
+        width: auto;
+    }
+    .bookNowBtn{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+ }

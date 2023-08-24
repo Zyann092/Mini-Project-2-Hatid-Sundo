@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatid Sundo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="heroSection">
+         <script defer src="assets/script/main.js"></script>
+     <!-- nav start -->
+        <nav class="nav-bar">
+        <div class="nav-logo-brand">
+            <span class="nav-logo"></span>
+            <span class="nav-brand"></span>
+        </div>
+        <div class="nav-btns">
+            <ul class="nav-list">
+                <li class="nav-item">
+                        <a href="#heroSection">Home</a>
+                </li>
+                <li class="nav-item">
+                        <a href="#serviceSection">Services</a>
+                </li>
+                <li class="nav-item">
+                        <a href="#jobOppurtunities">Careers</a>
+                </li>
+            </ul>
+            <div class="login-signup-logout-btns">
+                <div class="signup-holder">
+                    <button id="signupBtn" class="sign-up-btn">Sign Up</button>
+                </div>  
+                <div class="login-holder">
+                    <button id="loginBtn" class="log-in-btn">Log in</button>
+                </div>
+                <div class="logout-holder">
+                    <button id="logoutBtn" class="log-out-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+     </nav>
+    
+    <!-- nav end -->
+
+    <!-- login modal start -->
+    <form action="#" method="#">
+        <div id="loginModal" class="modal">
+            <div class="login-signup-admin-modal-close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></div>
+            <div class="signup-form">
+                <h2 class="signup-title">Log in</h2>
+                <div class="form-element">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" class="signup-login-input" placeholder="Enter Username">
+                </div>
+                <div class="form-element">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="signup-login-input" placeholder="Enter Password">
+                </div>
+                <div class="form-element">
+                    <input type="submit" id="loginSubmit" value="Log in" class="submit"/>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- login modal end -->
+    <div id="loggedInArea">
+        <p>Welcome <span id="loggedInUsername"></span>!</p>
+    </div>
+    <!-- signup modal start -->
+    <form action="#" method="#">
+        <div id="signupModal" class="modal">
+            <div class="login-signup-admin-modal-close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></div>
+            <div class="signup-form">
+                <h2 class="signup-title">Sign up</h2>
+                <div class="form-element">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" id="firstname"  class="signup-login-input" placeholder="Enter Firstname">
+                </div>
+                <div class="form-element">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="lastname" class="signup-login-input" placeholder="Enter Lastname">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" class="signup-login-input" placeholder="Enter Email Address">
+                </div>
+                <div class="form-element">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" class="signup-login-input" placeholder="Enter Username">
+                </div>
+                <div class="form-element">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" class="signup-login-input" placeholder="Enter Password">
+                </div>
+                <div class="form-element">
+                    <input type="submit" id="signupSubmit" value="Sign up" class="submit"/>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <!-- signup modal end -->
+
+    <!-- admin modal start -->
+    <form action="#" method="#">
+        <div id="loginModalAdmin" class="modal">
+            <div class="login-signup-admin-modal-close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></div>
+            <div class="signup-form">
+                <h2 class="signup-title">Admin Log in</h2>
+                <div class="form-element">
+                    <label for="loginUsernameAdmin">Username</label>
+                    <input type="text" id="loginUsernameAdmin" class="signup-login-input" placeholder="Enter Username">
+                </div>
+                <div class="form-element">
+                    <label for="loginPasswordAdmin">Password</label>
+                    <input type="password" id="loginPasswordAdmin" class="signup-login-input" placeholder="Enter Password">
+                </div>
+                <div class="form-element">
+                    <input type="submit" id="loginSubmitAdmin" value="Log in" class="submit"/>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- admin modal end -->
+
+    <!-- hero section start -->
+    <div class="hero-section">
+        <div class="hero-text-download">
+            <div class="hero-section-text-container">
+                <div class="hero-section-text-card">
+                    <div class="hero-section-text-icon">
+                        <i class="fa-solid fa-shield-halved hero-sec-icons" style="color: #000000;"></i>
+                    </div>
+                    <div class="hero-section-text">
+                        <span class="hero-text-main">99.9%</span>
+                        <span class="hero-text-support">Safety Record</span>
+                    </div>
+                </div>
+                <div class="hero-section-text-card">
+                    <div class="hero-section-text-icon">
+                        <i class="fa-regular fa-clock hero-sec-icons" style="color: #000000;"></i>
+                    </div>
+                    <div class="hero-section-text">
+                        <span class="hero-text-main">24/7</span>
+                        <span class="hero-text-support">Hours Availability</span>
+                    </div>
+                </div>
+                <div class="hero-section-text-card">
+                    <div class="hero-section-text-icon">
+                        <i class="fa-solid fa-taxi hero-sec-icons" style="color: #000000;"></i>
+                    </div>
+                    <div class="hero-section-text">
+                        <span class="hero-text-main">45,000</span>
+                        <span class="hero-text-support">People Serviced</span>
+                    </div>
+                </div>
+                <div class="hero-section-text-card">
+                    <div class="hero-section-text-icon">
+                        <i class="fa-solid fa-city hero-sec-icons" style="color: #000000;"></i>
+                    </div>
+                    <div class="hero-section-text">
+                        <span class="hero-text-main">1</span>
+                        <span class="hero-text-support">Servicing Areas</span>
+                        <div class="hero-text-support">(Philippines)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-section-download-container">
+                <div class="google-play"></div>
+                <div class="app-store"></div>
+            </div>
+        </div>
+        <div class="hero-pic-btn">
+            <div class="hero-section-pic"></div>
+            <div class="book-now-btn-holder">
+                <button id="bookNowBtn" class="book-now-btn-hero-section">Book Now!</button>
+            </div>
+        </div>
+    </div>
+    <br /><br /><br />
+    <div class="lineFoot1"></div>
+    <div class="lineFoot2"></div>
+    <!-- hero section end -->
+    </div>
+
+    <!-- booking start -->
+    <div class="booking-container" id="bookingContainer">
+        <button id="bookingCloseBtn" class="booking-close-btn"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+        <div class="main-content-container">
+            <div class="selector-card">
+                <h1>Book a Ride</h1>
+                <form action="#" method="#" class="form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="name-input booking-input" placeholder="Enter Full Name">
+                    <div class="vehicle-options-holder">
+                        <label for="vehicleOptions" class="choose-vehicle">Choose vehicle:</label>
+                        <select name="vehicleOptions" id="vehicleOptions" class="vehicle-options">
+                            <option id="motorcyle">Motorcycle</option>
+                            <option id="hatchback">Hatchback</option>
+                            <option id="sedan">Sedan</option>
+                            <option id="suv">SUV</option>
+                            <option id="pickup">Pickup</option>
+                            <option id="miniVan">Mini Van</option>
+                            <option id="van">Van</option>
+                        </select>
+                    </div>
+                    <div class="from-group">
+                        <label for="from"><i class="fa-regular fa-circle-dot booking-pickup-icon" style="color: #000000;"></i></label>
+                        <input type="text" id="from" class="from-input booking-input" placeholder="Pick up Location">
+                    </div>
+
+                    <div class="to-group">
+                        <label for="to"><i class="fa-solid fa-location-dot booking-destination-icon" style="color: #000000;"></i></label>
+                        <input type="text" id="to" class="to-input booking-input" placeholder="Destination">
+                    </div>
+                </form>
+                <div class="calc-btn-holder">
+                    <button class="calculate-btn" id="calculateBtn">Calculate</button>
+                </div>
+                <div id="output" class="booking-output">
+
+                </div>
+                <div id="fareDisplay" class="fare-display">
+                    
+                </div>
+                <button id="bookBtn" class="book-btn">Book</button>
+            </div>
+            <div class="map-card">
+                <div id="googleMap" class="google-map">
+                    
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <button id="closeBtn"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+                <div class="popup-texts">
+                    <span class="popup-heading">Thank you for Booking!</span>
+                    <span class="popup-subtext">Our driver is on the way to pick you up.</span>
+                    <div id="customerDetails">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- booking end -->
+
+    <!-- <button id="logoutBtn1" class="log-out-btn">Logout</button> -->
+    <!-- services section start -->
+    <div class="services-section" id="serviceSection">
+        <button id="bookNowBtnServices" class="book-now-btn">Book Now!</button>
+        <div class="services-container">
+          <div class="car-section">
+            <div class="car-pic">
+              <img src="assets/images/fortuner.png" alt="fortuner" class="fortuner" />
+              <img src="assets/images/pickup.png" alt="fortuner" class="fortuner" />
+              <img src="assets/images/motorOne.png" alt="fortuner" class="fortuner" />
+              <img src="assets/images/raise.png" alt="fortuner" class="fortuner" />
+              <img src="assets/images/vios.png" alt="fortuner" class="fortuner" />
+              <img src="assets/images/van.png" alt="fortuner" class="fortuner" />
+            </div>
+          </div>
+          <div class="video-section">
+            <video autoplay muted loop plays-inline id="videoBG">
+              <source src="assets/images/video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="text-content">
+          <p>
+            Hatid Sundo provides a wide fleet of vehicles from cars to motorcycles
+          </p>
+          <p>
+            that fits your needs and lifestyle. Availability is limited to a
+            first-book, first-serve basis.
+          </p>
+        </div>
+    </div>
+      
+    <!-- services section end -->
+
+    <br /><br /><br />
+    <div class="lineFoot1"></div>
+    <div class="lineFoot2"></div>
+
+    <!-- career start -->
+    <div class="bodyBG" id="jobOppurtunities">
+        <h4>WE WOULD LOVE TO WORK WITH YOU!</h4>
+        <div class="careerContainer">
+          <div class="drivers">
+            <div class="dMotor"></div>
+            <p class="riderTxt">
+              Deliver goods swiftly, navigate routes efficiently, maintain
+              vehicle.
+            </p>
+            <br />
+            <div class="dCar"></div>
+            <p class="driverTxt">
+              Operate vehicles safely, follow routes, ensure passenger
+              satisfaction.
+            </p>
+          </div>
+          <br />
+          <div class="admins">
+            <br />
+            <div class="adminForm">
+              <form action="#">
+                <div><label for="applicantFullName">Full Name:</label></div>
+                <div>
+                  <input type="text" id="applicantFullName" class="full-name" />
+                </div>
+                <br />
+                <div>
+                  <label for="applicantContactNumber">Contact Number:</label>
+                </div>
+                <div>
+                  <input
+                    type="number"
+                    id="applicantContactNumber"
+                    class="contact-number"
+                  />
+                </div>
+                <br />
+                <div><label for="uploadCV">Your Resume</label></div>
+                <div><input type="file" id="uploadCV" class="upload-cv" /></div>
+                <br />
+                <div>
+                  <input
+                    type="submit"
+                    value="Apply Now"
+                    id="applyBtn"
+                    class="apply-btn"
+                  />
+                </div>
+              </form>
+            </div>
+            <br /><br />
+            <div class="adminPic"></div>
+            <p class="adminTxt">
+              Organize tasks, manage data, assist team, maintain efficient
+              operations.
+            </p>
+          </div>
+        </div>
+       
+        <br />
+    </div>
+    <div id="applicantDisplayContainer" class="adminApplicationContainer">
+        <h1>Applicant List</h1>
+        <table class="applicant-table">
+           
+          <thead>
+            <td>Full Name</td>
+            <td>Contact Number</td>
+            <td>Action</td>
+          </thead>
+          <tbody id="applicantDisplay"></tbody>
+        </table>
+        <button id="adminLogoutBtn">Logout</button>
+    </div>
+    <!-- career end -->
+
+    <!--start of Footer-->
+    <br /><br /><br />
+    <div class="lineFoot1"></div>
+    <div class="lineFoot2"></div>
+    <br />
+    <div class="footerContainer" id="footerSection">
+        <div class="cardContainer" id="footerContainer">
+            <div class="footerCards">
+                <div class="firstFooterContent1">
+                    <a href="#heroSection"><div class="footerLogo"></div></a>
+                </div>
+                <div class="firstFooterContent2">
+                    <span
+                    ><i class="fa-brands fa-facebook fa-2xl"></i
+                    ></span>
+                    <span><i class="fa-brands fa-x-twitter fa-2xl"></i></span>
+                    <span><i class="fa-brands fa-instagram fa-2xl"></i></span>
+                    <span><i class="fa-brands fa-tiktok fa-2xl"></i></span>
+                </div>
+            </div>
+            <div class="footerCards">
+                <div class="footerHead">About Us</div>
+                <div class="aboutUsText">
+                    "Explore on Wheels: Experience the thrill of the open road with our
+                    premier car and motorcycle travel rental services. Choose from a
+                    diverse fleet, embark on unforgettable journeys, and make every
+                    adventure unforgettable."
+                </div>
+            </div>
+            <div class="footerCards">
+                <div class="footerHead">Talk to Us</div>
+                <div class="contactUsdetail">
+                    <div class="PLDT">
+                        <div class="tollFreeNumber">PLDT Toll Free Number</div>
+                        <div>1-800-10HATID</div>
+                        <div>1-800-10-468768</div>
+                    </div>
+                    <br />
+                    <div class="land">
+                        <div class="landlineNum">Land Line</div>
+                        <div>(02)-8581-6800 to 6999</div>
+                    </div>
+                    <br />
+                    <div class="mobile">
+                        <div class="mobileNum">Mobile Number</div>
+                        <div>0917-88-HATID</div>
+                        <div>0917-88-89067</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerCards">
+                <div class="footerHead">Books to us Now!</div>
+                <button id="bookNowBtnFooter" class="book-now-btn-footer">Book Now!</button>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="copyRight">
+      © Copyright 2023 | HatidSundo. All rights reserved.
+    </div>
+    <!--end of footer-->
+
+    <script
+      src="https://kit.fontawesome.com/3c4a05636b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSQKP0RFvDNpnMJ8au2nILm8l0NfjG7NE&libraries=places"></script>
+    <script src="https://kit.fontawesome.com/c5fcd4a5ac.js" crossorigin="anonymous"></script>
+</body>
+</html
